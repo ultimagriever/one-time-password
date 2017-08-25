@@ -8,3 +8,15 @@ SMS.
 
 Please bear in mind that, for these functions to work, you need a paid Firebase plan. For the purposes of
 testing this code, you can use a Blaze plan (pay-as-you-go).
+
+### Setup
+* Create a Firebase project on [Firebase Console](https://console.firebase.google.com)
+* Create a Firebase service account and save the JSON file inside `functions/service_account.json`
+* Enable anonymous auth
+* Create a Twilio account and obtain a phone number that's capable of sending SMS
+* Add your account SID and auth token to `twilio-sample.js` and save as `twilio.js`
+* Open the `/functions` directory in your terminal and run `npm install`
+
+### Deployment
+* Install Firebase CLI tools (`npm install -g firebase-tools`)
+* Run `firebase deploy --project YOUR_PROJECT_ID` in your project root
